@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        
+        <div class="parent-container">
+            <p class="title">Calculator</p>
+            <p id="expression"></p>
+            <p id="expression-result"></p>
+            <div class="grid-container">
+                <!-- First row -->
+                <button class="btn-calculator btn-black" onclick="addToExpression('1')">
+                    1
+                </button>
+                <button class="btn-calculator btn-black" onclick="addToExpression('2')">
+                    2
+                </button>
+                <button class="btn-calculator btn-black" onclick="addToExpression('3')">
+                    3
+                </button>
+                <button class="btn-calculator btn-orange" onclick="addToExpression('+')">
+                    +
+                </button>
+                <!-- End - First row -->
+                <!-- Second row -->
+                <button class="btn-calculator btn-black" onclick="addToExpression('4')">
+                    4
+                </button>
+                <button class="btn-calculator btn-black" onclick="addToExpression('5')">
+                    5
+                </button>
+                <button class="btn-calculator btn-black" onclick="addToExpression('6')">
+                    6
+                </button>
+                <button class="btn-calculator btn-orange" onclick="addToExpression('-')">
+                    -
+                </button>
+                <!-- End - Second row -->
+                <!-- Third row -->
+                <button class="btn-calculator btn-black" onclick="addToExpression('7')">
+                    7
+                </button>
+                <button class="btn-calculator btn-black" onclick="addToExpression('8')">
+                    8
+                </button>
+                <button class="btn-calculator btn-black" onclick="addToExpression('9')">
+                    9
+                </button>
+                <button class="btn-calculator btn-orange" onclick="addToExpression('*')">
+                    *
+                </button>
+                <!-- End - Third row -->
+                <!-- Fourth row -->
+                <button class="btn-calculator btn-black" onclick="addToExpression('0')">
+                    0
+                </button>
+                <button class="btn-calculator btn-black" onclick="addToExpression('.')">
+                    .
+                </button>
+                <button class="btn-calculator btn-black" onclick="evaluateExpression()">
+                    =
+                </button>
+                <button class="btn-calculator btn-orange" onclick="addToExpression('/')">
+                    /
+                </button>
+                <!-- End - Fourth row -->
+                <!-- Fifth row -->
+                <button class="btn-calculator btn-black" onclick="clearExpression()">
+                    Clear
+                </button>
+                <button class="btn-calculator btn-black" onclick="removeTermLast()">
+                    &lt
+                </button>
+                <!-- End - Fifth row -->
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
